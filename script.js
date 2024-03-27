@@ -73,7 +73,18 @@ function myFunction2() {
 }
 // ___________________________________________________________________________________________
 
+// _____________________________________MESHQ_________________________________________________
 
+let meyveler = "alma, armud, ciyelek";
+// document.getElementById('div2').innerHTML = meyveler;  // div2 bosdur
+let visitor = prompt('alma, armud, ciyelek ingilis diline tercume etmek ucun meyve adini daxil edin');
 
-
-
+if(visitor==meyveler.slice(0,4)) {
+    document.getElementById('div3').innerHTML = 'apple';
+} else if(visitor==meyveler.slice(6,11)) {
+    document.getElementById('div3').innerHTML = 'pear';
+} else if(visitor == meyveler.slice(13,20)) {
+    document.getElementById('div3').innerHTML = 'strawberry';
+} else {
+    alert('yeniden cehd edin');
+}
